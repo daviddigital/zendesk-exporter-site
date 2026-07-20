@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Zendesk Exporter for Google Sheets</title>
+<style>
+  body { font: 16px/1.6 -apple-system, Segoe UI, Roboto, Arial, sans-serif; color: #202124; max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+  h1 { font-size: 28px; } h2 { font-size: 19px; margin-top: 32px; }
+  a { color: #137A45; } code { background: #f1f3f4; padding: 1px 5px; border-radius: 4px; font-size: 14px; }
+  .muted { color: #5f6368; } hr { border: none; border-top: 1px solid #e0e0e0; margin: 28px 0; }
+</style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Zendesk Exporter for Google Sheets, published by <strong>Cody Labs</strong>. Effective 20 July 2026.</p>
+  <hr>
+
+  <p>Zendesk Exporter for Google Sheets (the “add-on”) moves your Zendesk ticket data into your own Google Sheets. This policy explains what the add-on accesses and how that data is handled. The short version: <strong>your data flows directly between your Zendesk account and your Google Sheet — Cody Labs operates no servers and never receives, stores, or transmits your ticket data or your Zendesk credentials.</strong></p>
+
+  <h2>Information the add-on accesses</h2>
+  <ul>
+    <li><strong>Zendesk credentials you provide</strong> — your subdomain, agent email, and API token, used to authenticate to the Zendesk REST API on your behalf.</li>
+    <li><strong>Zendesk ticket data</strong> — the tickets, fields, and user names returned by the views or searches you choose to import.</li>
+    <li><strong>The active Google Spreadsheet</strong> — only the spreadsheet you run the add-on in (via the restricted <code>spreadsheets.currentonly</code> scope). The add-on cannot see your other files in Google Drive.</li>
+  </ul>
+
+  <h2>Where your data goes</h2>
+  <p>All processing happens inside Google’s Apps Script runtime, in your Google account. Ticket data is fetched from your Zendesk instance and written into your spreadsheet. It is <strong>not</strong> sent to Cody Labs or any third party. We have no database and no server that could receive it.</p>
+
+  <h2>How your credentials are stored</h2>
+  <p>Your Zendesk credentials are stored using Google’s <code>PropertiesService</code> (user properties), scoped to your Google account. They are <strong>never written into the spreadsheet</strong> and are not visible to other people you share the sheet with. They remain until you disconnect or uninstall the add-on, at which point they are removed.</p>
+
+  <h2>License verification</h2>
+  <p>If you enter a license key to unlock paid features, the add-on sends <strong>only that license key and a product identifier</strong> to our payment processor, Gumroad, to confirm your subscription is active. No ticket data or Zendesk credentials are involved. See <a href="https://gumroad.com/privacy">Gumroad’s privacy policy</a>.</p>
+
+  <h2>Google user data &amp; Limited Use</h2>
+  <p>The add-on’s use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements. We do not use Google user data for advertising, and we do not sell it or transfer it to third parties except as needed to provide the add-on’s core functionality (which, as described above, involves no transfer to us at all).</p>
+
+  <h2>Data retention &amp; deletion</h2>
+  <p>Because we store nothing on our own systems, there is nothing for us to retain or delete. Credentials and settings live in your Google account’s add-on storage and are removed when you disconnect or uninstall. Ticket data lives in your spreadsheet, under your control.</p>
+
+  <h2>Third-party services</h2>
+  <ul>
+    <li><strong>Zendesk</strong> — your own Zendesk instance, accessed with the credentials you supply.</li>
+    <li><strong>Gumroad</strong> — used only to verify license keys for paid subscriptions.</li>
+  </ul>
+
+  <h2>Changes</h2>
+  <p>We may update this policy; material changes will be reflected by the effective date above.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:davidwatts11@gmail.com">davidwatts11@gmail.com</a>.</p>
+
+  <hr>
+  <p class="muted">Zendesk is a trademark of Zendesk, Inc. Google Sheets is a trademark of Google LLC. This add-on is independent and not affiliated with or endorsed by either.</p>
+</body>
+</html>

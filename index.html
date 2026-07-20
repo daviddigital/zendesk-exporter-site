@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zendesk Exporter for Google Sheets — by Cody Labs</title>
+<meta name="description" content="Export Zendesk tickets to Google Sheets automatically. Any view or search, custom fields included, refreshed hourly, daily, or weekly.">
+<style>
+  :root{--g:#137A45;--g2:#1B9C5E;--ink:#202124;--muted:#5f6368;--line:#e3e6e4}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:16px/1.6 -apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink)}
+  a{color:var(--g)}
+  .wrap{max-width:960px;margin:0 auto;padding:0 20px}
+  header{background:linear-gradient(135deg,var(--g2),var(--g));color:#fff;padding:60px 0 68px;text-align:center}
+  header img{width:88px;height:88px;border-radius:20px;box-shadow:0 6px 20px rgba(0,0,0,.2)}
+  header h1{font-size:34px;margin:20px 0 8px}
+  header p{font-size:18px;opacity:.95;max-width:620px;margin:0 auto}
+  .cta{display:inline-block;margin-top:26px;background:#fff;color:var(--g);font-weight:600;padding:12px 26px;border-radius:8px;text-decoration:none}
+  section{padding:52px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:24px;margin-bottom:22px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .feat h3{font-size:17px;margin-bottom:4px}.feat p{color:var(--muted);font-size:15px}
+  .shot{width:100%;border:1px solid var(--line);border-radius:10px;margin-top:10px}
+  .price{display:flex;gap:20px;flex-wrap:wrap}
+  .card{flex:1;min-width:240px;border:1px solid var(--line);border-radius:12px;padding:24px}
+  .card.pro{border-color:var(--g);box-shadow:0 4px 16px rgba(19,122,69,.12)}
+  .card .amt{font-size:30px;font-weight:700;margin:6px 0}
+  .card ul{margin:14px 0 0 18px;color:var(--muted)}
+  footer{padding:34px 0;text-align:center;color:var(--muted);font-size:14px}
+  footer a{margin:0 10px}
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <img src="assets/icon-128.png" alt="Zendesk Exporter icon">
+      <h1>Zendesk Exporter for Google Sheets</h1>
+      <p>Zendesk has no scheduled ticket export. This add-on pulls any view or search into a Google Sheet — custom fields included — and refreshes it hourly, daily, or weekly.</p>
+      <a class="cta" href="#">Install from Google Workspace Marketplace</a>
+    </div>
+  </header>
+
+  <section><div class="wrap">
+    <h2>What it does</h2>
+    <div class="grid">
+      <div class="feat"><h3>Views &amp; searches</h3><p>Import any Zendesk view, or any search using Zendesk's own syntax — no 1,000-result cap.</p></div>
+      <div class="feat"><h3>The columns you want</h3><p>Standard fields plus your custom ticket fields. Assignee and requester IDs resolve to real names.</p></div>
+      <div class="feat"><h3>Scheduled refresh</h3><p>Manual, hourly, daily, or weekly. Each tab is stamped with its last-refreshed time — even with the sheet closed.</p></div>
+      <div class="feat"><h3>Private by design</h3><p>Credentials stay in your Google account's add-on storage. Ticket data goes straight from Zendesk to your sheet — we run no servers.</p></div>
+    </div>
+    <img class="shot" src="assets/screenshot-shot1.png" alt="Zendesk tickets in a Google Sheet with the exporter sidebar">
+  </div></section>
+
+  <section><div class="wrap">
+    <h2>Pricing</h2>
+    <div class="price">
+      <div class="card"><div>Free</div><div class="amt">$0</div><ul><li>One saved query</li><li>Manual refresh</li><li>All fields &amp; custom fields</li></ul></div>
+      <div class="card pro"><div>Pro</div><div class="amt">$15<span style="font-size:15px;font-weight:400">/mo</span></div><ul><li>Unlimited saved queries</li><li>Hourly / daily / weekly schedules</li><li>Everything in Free</li></ul></div>
+    </div>
+  </div></section>
+
+  <footer>
+    <div>Zendesk Exporter for Google Sheets — by Cody Labs</div>
+    <div style="margin-top:8px">
+      <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="mailto:davidwatts11@gmail.com">Support</a>
+    </div>
+    <div style="margin-top:12px;font-size:12px">Zendesk and Google Sheets are trademarks of their respective owners. This add-on is independent and not affiliated with either.</div>
+  </footer>
+</body>
+</html>
