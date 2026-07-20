@@ -56,7 +56,7 @@ You chose paid-from-day-one, so the license gate needs a real Gumroad product to
 2. Type: **Membership**, name **Zendesk Exporter — Pro**, price **$15/month**.
 3. In the product's **Settings / Checkout**, turn ON **"Generate a unique license key per sale."**
 4. Publish the product.
-5. Copy the **product ID**: open the product, and in **Share → “Show product ID”** (or the URL/settings) copy the `product_id` string. You'll paste it in Step 2 as `LICENSE_PRODUCT_ID`.
+5. Set the product's **URL / permalink** to `zendesk-exporter` (in the product's Settings, the URL field → `https://codylabs.gumroad.com/l/zendesk-exporter`). Use this same value as `LICENSE_PRODUCT_ID` in Step 2 — the add-on accepts either the permalink or Gumroad's internal product_id, so the permalink (easy to find, it's right in the URL) is simplest.
 
 > How licensing works: a buyer gets a license key, pastes it into the add-on's sidebar footer, and the add-on verifies it against Gumroad's `/v2/licenses/verify` using this product ID. Refunds/cancellations automatically lose Pro. The **free tier (1 query, manual refresh) still works without any key** — that's your install funnel.
 
@@ -68,7 +68,7 @@ You chose paid-from-day-one, so the license gate needs a real Gumroad product to
 |---|---|
 | `LICENSE_ENFORCED` | `true` |
 | `LICENSE_PROVIDER` | `gumroad` |
-| `LICENSE_PRODUCT_ID` | *(the product ID from Step 1)* |
+| `LICENSE_PRODUCT_ID` | *(the product's URL permalink from Step 1, e.g. `zendesk-exporter` — or Gumroad's product_id; either works)* |
 
 Save. The gate is now live: free = 1 query/manual; Pro features require a valid key. (Leave `LICENSE_ENFORCED` unset/`false` if you ever want to reopen everything.)
 
