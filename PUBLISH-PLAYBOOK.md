@@ -27,7 +27,7 @@ Google's publishing surface has no API — steps marked 🧑 are unavoidably man
 | Privacy policy URL | https://daviddigital.github.io/zendesk-exporter-site/privacy.html |
 | Terms of service URL | https://daviddigital.github.io/zendesk-exporter-site/terms.html |
 | Category | Reports & analytics |
-| Pricing | Free with paid features ($15/mo Pro) |
+| Pricing | Free with paid features (A$15/mo Pro, billed AUD) |
 
 **OAuth scopes (all four — paste each into the consent screen and the SDK):**
 ```
@@ -53,7 +53,7 @@ https://www.googleapis.com/auth/script.scriptapp
 You chose paid-from-day-one, so the license gate needs a real Gumroad product to check against.
 
 1. Sign in at **gumroad.com** → **Products → New product**.
-2. Type: **Membership**, name **Zendesk Exporter — Pro**, price **$15/month**.
+2. Type: **Membership**, name **Zendesk Exporter — Pro**, price **A$15/month**.
 3. In the product's **Settings / Checkout**, turn ON **"Generate a unique license key per sale."**
 4. Publish the product.
 5. Set the product's **URL / permalink** to `zendesk-exporter` (in the product's Settings, the URL field → `https://codylabs.gumroad.com/l/zendesk-exporter`). Use this same value as `LICENSE_PRODUCT_ID` in Step 2 — the add-on accepts either the permalink or Gumroad's internal product_id, so the permalink (easy to find, it's right in the URL) is simplest.
